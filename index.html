@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head Tails</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="ht">HEAD & TAILS</h1>
+    <button onclick="
+   algo();
+   let finalResult='';
+   if (result === 'head') {finalResult='Congratulations!You Won.'} else if (result==='tail') {finalResult='Oh Shit! You lose.'}
+   alert(`${finalresult}`)
+    ">Head</button>
+
+    <button onclick ="
+    algo();
+    let finalResult='';
+   if (result === 'tail') {finalResult='Congratulations!You Won.'} else if (result==='head') {finalResult='Oh Shit! You lose.'}
+    alert(`${finalResult}`)
+     ">Tail</button>
+ 
+  
+  <script>
+        
+        let result ='';
+        function algo() {
+         const randomNumber = Math.random();
+         
+         if(randomNumber >=0 && randomNumber <1/2) { result = 'head'} else if (randomNumber>=1/2 && randomNumber <1) {result ='tail'}
+        }
+
+    </script>
+</body>
+</html>
